@@ -1,133 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>HUANG JINGYUAN - Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 850px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
-        h1 { text-align: center; color: #111; border-bottom: 3px solid #111; padding-bottom: 10px; }
-        h2 { color: #222; background-color: #f4f4f4; padding: 10px; margin-top: 40px; border-left: 5px solid #333; }
-        h3 { color: #555; margin-top: 25px; }
-        img { max-width: 100%; height: auto; border: 1px solid #ddd; margin: 15px 0; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .note { font-style: italic; color: #666; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Selected calligraphy and graphic design coursework by Huang Jingyuan.">
+<title>Huang Jingyuan | Graphic Design Portfolio</title>
+<style>
+:root { color-scheme: light; --paper:#f8f6f0; --ink:#20201d; --muted:#605c54; --line:#d4cfc4; --red:#902f27; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--paper); color:var(--ink); font: 1rem/1.6 system-ui,sans-serif; }
+a { color:inherit; text-underline-offset:.25em; }
+a:hover, summary:hover { color:var(--red); }
+:focus-visible { outline:2px solid var(--red); outline-offset:5px; }
+.wrap { width:min(1120px, calc(100% - 3rem)); margin-inline:auto; }
+.bar, footer { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.5rem 1.5rem; padding-block:1.25rem; }
+.bar { border-bottom:1px solid var(--line); }
+.brand { font-weight:700; text-decoration:none; }
+nav { display:flex; gap:clamp(.8rem, 3vw, 2rem); }
+nav a { font-size:.875rem; }
+.hero { padding-block:clamp(3.5rem, 10vw, 8.5rem); }
+h1,h3 { font-family:Georgia,serif; font-weight:400; letter-spacing:-.045em; line-height:1.02; margin:0; }
+h1 { font-size:clamp(3.3rem, 10vw, 8.5rem); }
+.hero p { margin:.9rem 0 0; color:var(--muted); font-size:clamp(1.05rem, 2vw, 1.35rem); }
+section { scroll-margin-top:1rem; margin-bottom:clamp(4rem, 9vw, 8rem); }
+.section-title { border-top:1px solid var(--ink); padding-top:.9rem; margin:0 0 2.5rem; font-size:.82rem; letter-spacing:.13em; text-transform:uppercase; }
+.project + .project { margin-top:clamp(3rem, 8vw, 7rem); padding-top:clamp(2rem, 5vw, 4rem); border-top:1px solid var(--line); }
+.project h3 { font-size:clamp(2.35rem, 5vw, 4.25rem); }
+.medium { color:var(--red); font-size:.78rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; margin:0 0 .7rem; }
+.description { max-width:57ch; color:var(--muted); margin:1rem 0 1.6rem; }
+.pair { display:grid; grid-template-columns:1.057fr 1fr; gap:clamp(.8rem, 2vw, 1.6rem); }
+.single { display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.5rem, 7vw, 7rem); align-items:center; }
+figure { margin:0; }
+img { display:block; width:100%; height:auto; }
+figure a { display:block; }
+figcaption { color:var(--muted); font-size:.85rem; margin-top:.65rem; }
+details { border-bottom:1px solid var(--line); }
+summary { cursor:pointer; padding:1.1rem 0; font-weight:600; }
+.exercise { padding:0 0 1.75rem 1.2rem; max-width:780px; }
+.exercise h4 { margin:1.5rem 0 .4rem; }
+.exercise p { margin:.4rem 0 .75rem; }
+.exercise img { width:auto; max-width:100%; max-height:720px; margin:0 0 1.2rem; }
+.note { color:var(--muted); }
+footer { border-top:1px solid var(--line); font-size:.85rem; color:var(--muted); }
+@media (max-width:600px) { .pair,.single { grid-template-columns:1fr; } .wrap { width:calc(100% - 2rem); } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+</style>
 </head>
-<body>
-
-    <h1>HUANG JINGYUAN's Portfolio</h1>
-    <p>Welcome to my professional practice portfolio. Here you can find my Week 01 exercises.</p >
-
-    <h2>Week 01 - Exercise 01A: Communication</h2>
-
-    <h3>Research</h3>
-    <p>I analyzed two websites to see how they create a good impression through design and typography:</p >
+<body id="top">
+<header class="wrap bar">
+  <a class="brand" href="#top">Huang Jingyuan</a>
+  <nav aria-label="Portfolio"><a href="#work">Selected work</a><a href="#coursework">Coursework</a></nav>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <h1>Huang Jingyuan</h1>
+    <p>Graphic design student · Calligraphy and visual communication</p>
+  </div>
+  <section id="work" aria-labelledby="work-title">
+    <h2 class="section-title" id="work-title">Selected work</h2>
+    <article class="project">
+      <p class="medium">Chinese calligraphy · Ink on paper</p>
+      <h3>Ode to Guangxi</h3>
+      <p class="description">Inspired by Guangxi, this piece explores how brush pressure and spacing give written characters a visual rhythm. The two photographs show the brush at work and the shifts in weight and texture visible in the finished strokes.</p>
+      <div class="pair">
+        <figure>
+          <a href="calligraphy-process.jpg" aria-label="View the calligraphy process photograph at full size"><img src="calligraphy-process.jpg" width="1250" height="1800" alt="A calligrapher holds an ink brush above a sheet of paper." decoding="async"></a>
+          <figcaption>Process · Writing with a brush</figcaption>
+        </figure>
+        <figure>
+          <a href="calligraphy-detail.jpg" aria-label="View the calligraphy detail at full size"><img src="calligraphy-detail.jpg" width="1181" height="1800" alt="Close-up of bold black Chinese characters on ruled paper with a small red seal." decoding="async"></a>
+          <figcaption>Detail · Stroke weight, spacing and texture</figcaption>
+        </figure>
+      </div>
+    </article>
+    <article class="project single">
+      <div>
+        <p class="medium">Chinese calligraphy · Ink on coloured paper</p>
+        <h3>Chán <span lang="zh">禪</span></h3>
+        <p class="description">This single-character composition centres on <i>chán</i>, the Chinese term for Zen. A long vertical stroke anchors the character, while dry-brush edges reveal the warm paper beneath. Two red seals punctuate the composition.</p>
+      </div>
+      <figure>
+        <a href="chan-calligraphy.jpg" aria-label="View Chán at full size"><img src="chan-calligraphy.jpg" width="983" height="2000" alt="The character Chán written in black ink on golden paper with two red seals." loading="lazy" decoding="async"></a>
+        <figcaption>Chán · Brush and ink on golden paper</figcaption>
+      </figure>
+    </article>
+  </section>
+  <section id="coursework" aria-labelledby="coursework-title">
+    <h2 class="section-title" id="coursework-title">Professional practice coursework</h2>
+    <details>
+      <summary>Week 01 · 01A — Communication</summary>
+      <div class="exercise">
+        <h4>Research</h4>
+    <p>I analyzed two websites to see how they create a good impression through design and typography:</p>
     
-    <p><strong>1. Qodeca:</strong> This site uses a clean layout with bright yellow highlights to draw attention to key text. The clear navigation and prominent "Let's talk" button make it look professional and easy to use.</p >
-    <img src="research1.png">
+    <p><strong>1. Qodeca:</strong> This site uses a clean layout with bright yellow highlights to draw attention to key text. The clear navigation and prominent "Let's talk" button make it look professional and easy to use.</p>
+    <img src="research1.png" alt="Qodeca website screenshot" loading="lazy" decoding="async">
 
-    <p><strong>2. /nk.studio:</strong> This site uses bold colors and creative animations. It leaves a strong impression by feeling modern and highly creative.</p >
-    <img src="research2.png">
+    <p><strong>2. /nk.studio:</strong> This site uses bold colors and creative animations. It leaves a strong impression by feeling modern and highly creative.</p>
+    <img src="research2.png" alt="/nk.studio website screenshot" loading="lazy" decoding="async">
 
-    <h3>Process Work & Final Outcome</h3>
-    <p><strong>My 143-character response:</strong> Why do I want to be a graphic designer?</p >
-    <img src="answer.png">
+    <h4>Process Work & Final Outcome</h4>
+    <p><strong>My 143-character response:</strong> Why do I want to be a graphic designer?</p>
+    <img src="answer.png" alt="Written response about pursuing graphic design" loading="lazy" decoding="async">
     
-    <p><strong>Homepage Draft:</strong> My initial sketch and layout idea for my portfolio website.</p >
-    <img src="homepage_draft.jpg">
+    <p><strong>Homepage Draft:</strong> My initial sketch and layout idea for my portfolio website.</p>
+    <img src="homepage_draft.jpg" alt="Initial portfolio homepage sketch" loading="lazy" decoding="async">
 
-    <h3>Reflections</h3>
-    <p class="note">Through this exercise, I learned that creating a good impression relies heavily on clear typography, visual hierarchy, and how well the design communicates the core message to the user.</p >
+    <h4>Reflections</h4>
+    <p class="note">Through this exercise, I learned that creating a good impression relies heavily on clear typography, visual hierarchy, and how well the design communicates the core message to the user.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Week 01 · 01B — Costing</summary>
+      <div class="exercise">
+        <h4>Process Work</h4>
+    <p><strong>My Skill Set & Pricing List:</strong></p>
+    <img src="pricing.jpg" alt="Process Work" loading="lazy" decoding="async">
 
-    <h2>Week 01 - Exercise 01B: Costing</h2>
-    
-    <h3>Process Work</h3>
-    <p><strong>My Skill Set & Pricing List:</strong></p >
-    <img src="pricing.jpg">
+    <h4>Final Outcome</h4>
+    <p><strong>Commercial Invoice Design:</strong> Based on my pricing list, this is a professional invoice designed for a client.</p>
+    <img src="invoice.png" alt="Final Outcome" loading="lazy" decoding="async">
+      </div>
+    </details>
+    <details>
+      <summary>Week 02 · 02A — Ethics</summary>
+      <div class="exercise">
+        <h4>Final Outcome (Ethics Journal)</h4>
+    <p>My personal statements reflecting my design ethics:</p>
+    <img src="week2_02a_process.png" alt="Final Outcome (Ethics Journal)" loading="lazy" decoding="async">
 
-    <h3>Final Outcome</h3>
-    <p><strong>Commercial Invoice Design:</strong> Based on my pricing list, this is a professional invoice designed for a client.</p >
-    <img src="invoice.png">
-    <h2>Week 02 - Exercise 02A: Ethics</h2>
+    <h4>Reflections</h4>
+    <p class="note">This exercise made me realize that being a designer is not just about making things look good; it's about taking responsibility for the impact our work has on society.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Week 02 · 02B — Costing & Ethics</summary>
+      <div class="exercise">
+        <h4>Process Work</h4>
+    <p>Analyzing the three ethical scenarios:</p>
+    <img src="week2_02b_process.jpg" alt="Process Work" loading="lazy" decoding="async">
 
-    <h3>Final Outcome (Ethics Journal)</h3>
-    <p>My personal statements reflecting my design ethics:</p >
-    <img src="week2_02a_process.png">
+    <h4>Final Outcome</h4>
+    <p>My reasoning for rejecting an unethical job (Scenario 1):</p>
+    <img src="week2_02b_final.png" alt="Final Outcome" loading="lazy" decoding="async">
 
-    <h3>Reflections</h3>
-    <p class="note">This exercise made me realize that being a designer is not just about making things look good; it's about taking responsibility for the impact our work has on society.</p >
+    <h4>Reflections</h4>
+    <p class="note">Understanding my boundaries as a designer is crucial. It's okay to decline a project if it conflicts with my personal values.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Week 03 · 03A — Future Gazing</summary>
+      <div class="exercise">
+        <h4>Final Outcome (10-Year Career Timeline)</h4>
+    <p>My roadmap to becoming a Studio Founder over the next decade:</p>
+    <img src="week3_03a_timeline.png" alt="Final Outcome (10-Year Career Timeline)" loading="lazy" decoding="async">
 
-    <h2>Week 02 - Exercise 02B: Costing & Ethics</h2>
+    <h4>Process Work & Reflections</h4>
+    <p>Self-evaluation on my current strengths and future goals:</p>
+    <img src="week3_03a_reflection.png" alt="Process Work &amp; Reflections" loading="lazy" decoding="async">
+      </div>
+    </details>
+    <details>
+      <summary>Week 03 · 03B — Promotions</summary>
+      <div class="exercise">
+        <h4>Process Work (30-Second Introduction)</h4>
+    <p>Drafting my professional introduction script:</p>
+    <img src="week3_03b_script.png" alt="Process Work (30-Second Introduction)" loading="lazy" decoding="async">
 
-    <h3>Process Work</h3>
-    <p>Analyzing the three ethical scenarios:</p >
-    <img src="week2_02b_process.jpg">
+    <h4>Final Outcome (Profile Design)</h4>
+    <p>Visual presentation of my professional identity:</p>
+    <img src="week3.03b_final.png" alt="Final Outcome (Profile Design)" loading="lazy" decoding="async">
+      </div>
+    </details>
+    <details>
+      <summary>Week 04 · 04A — Constraints</summary>
+      <div class="exercise">
+        <h4>Process Work (Overcoming Constraints)</h4>
+    <p>How I solved the strict design constraints (A5, 2 colors, Arial only, no images):</p>
+    <img src="week4_04a_constraints.png" alt="Process Work (Overcoming Constraints)" loading="lazy" decoding="async">
 
-    <h3>Final Outcome</h3>
-    <p>My reasoning for rejecting an unethical job (Scenario 1):</p >
-    <img src="week2_02b_final.png">
+    <h4>Final Outcome (A5 Flyer Design)</h4>
+    <p>My final flyer design for "The Pie Room Cafe":</p>
+    <img src="week4_04a_flyer.png" alt="Final Outcome (A5 Flyer Design)" loading="lazy" decoding="async">
+      </div>
+    </details>
+    <details>
+      <summary>Week 04 · 04B — Workflow</summary>
+      <div class="exercise">
+        <h4>Final Outcome (Reverse Workflow)</h4>
+    <p>A reverse-engineered workflow diagram showing the stages of creating a pie:</p>
+    <img src="week4_04b_workflow.png" alt="Final Outcome (Reverse Workflow)" loading="lazy" decoding="async">
 
-    <h3>Reflections</h3>
-    <p class="note">Understanding my boundaries as a designer is crucial. It's okay to decline a project if it conflicts with my personal values.</p >
+    <h4>Reflections</h4>
+    <p class="note">Understanding constraints forces me to be more creative. Working backwards helps me understand the full life cycle of a design project.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Week 05 · 05 — Personal Branding</summary>
+      <div class="exercise">
+        <h4>Brand Foundation</h4>
+    <p>My core identity, personality, and goals as an emerging designer:</p>
+    <img src="week5_01_foundation.png" alt="Brand Foundation" loading="lazy" decoding="async">
 
-    <h2>Week 03 - Exercise 03A: Future Gazing</h2>
+    <h4>Personal Brand Statement</h4>
+    <p>A concise summary of who I am, what I do, and who I design for:</p>
+    <img src="week5_02_statement.png" alt="Personal Brand Statement" loading="lazy" decoding="async">
 
-    <h3>Final Outcome (10-Year Career Timeline)</h3>
-    <p>My roadmap to becoming a Studio Founder over the next decade:</p >
-    <img src="week3_03a_timeline.png">
+    <h4>Visual Identity</h4>
+    <p>My personal logo, colour palette, and typography system:</p>
+    <img src="week5_03_identity.png" alt="Visual Identity" loading="lazy" decoding="async">
 
-    <h3>Process Work & Reflections</h3>
-    <p>Self-evaluation on my current strengths and future goals:</p >
-    <img src="week3_03a_reflection.png">
+    <h4>Brand Rationale</h4>
+    <p>Explanation of my visual direction and design choices:</p>
+    <img src="week5_04_rationale.png" alt="Brand Rationale" loading="lazy" decoding="async">
 
-    <h2>Week 03 - Exercise 03B: Promotions</h2>
-
-    <h3>Process Work (30-Second Introduction)</h3>
-    <p>Drafting my professional introduction script:</p >
-    <img src="week3_03b_script.png">
-
-    <h3>Final Outcome (Profile Design)</h3>
-    <p>Visual presentation of my professional identity:</p >
-    <img src="week3.03b_final.png">
-
-    <h2>Week 04 - Exercise 04A: Constraints</h2>
-
-    <h3>Process Work (Overcoming Constraints)</h3>
-    <p>How I solved the strict design constraints (A5, 2 colors, Arial only, no images):</p >
-    <img src="week4_04a_constraints.png">
-
-    <h3>Final Outcome (A5 Flyer Design)</h3>
-    <p>My final flyer design for "The Pie Room Cafe":</p >
-    <img src="week4_04a_flyer.png">
-      
-    <h2>Week 04 - Exercise 04B: WorkFlow</h2>
-    
-    <h3>Final Outcome (Reverse Workflow)</h3>
-    <p>A reverse-engineered workflow diagram showing the stages of creating a pie:</p >
-    <img src="week4_04b_workflow.png">
-
-    <h3>Reflections</h3>
-    <p class="note">Understanding constraints forces me to be more creative. Working backwards helps me understand the full life cycle of a design project.</p >
-
-<h2>Week 05 - Exercise 05: Personal Branding</h2>
-
-    <h3>Brand Foundation</h3>
-    <p>My core identity, personality, and goals as an emerging designer:</p >
-    <img src="week5_01_foundation.png">
-
-    <h3>Personal Brand Statement</h3>
-    <p>A concise summary of who I am, what I do, and who I design for:</p >
-    <img src="week5_02_statement.png">
-
-    <h3>Visual Identity</h3>
-    <p>My personal logo, colour palette, and typography system:</p >
-    <img src="week5_03_identity.png">
-
-    <h3>Brand Rationale</h3>
-    <p>Explanation of my visual direction and design choices:</p >
-    <img src="week5_04_rationale.png">
-
-    <h3>Reflections</h3>
-    <p class="note">Building a personal brand helped me understand my unique value as a designer.</p >
-
+    <h4>Reflections</h4>
+    <p class="note">Building a personal brand helped me understand my unique value as a designer.</p>
+      </div>
+    </details>
+  </section>
+</main>
+<footer class="wrap"><span>© Huang Jingyuan</span><a href="#top">Back to top ↑</a></footer>
 </body>
-</html>    
+</html>

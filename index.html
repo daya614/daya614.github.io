@@ -30,11 +30,12 @@ section { scroll-margin-top:1rem; margin-bottom:clamp(4rem, 9vw, 8rem); }
 .medium { color:var(--red); font-size:.78rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; margin:0 0 .7rem; }
 .description { max-width:57ch; color:var(--muted); margin:1rem 0 1.6rem; }
 .pair { display:grid; grid-template-columns:1.057fr 1fr; gap:clamp(.8rem, 2vw, 1.6rem); }
-.chan-pair { grid-template-columns:1.14fr 1fr; max-width:790px; }
+.chan-project { display:grid; grid-template-columns:minmax(0, 1fr) minmax(0, 2.1fr); column-gap:clamp(1.5rem, 4vw, 3.5rem); align-items:start; }
+.chan-pair { grid-template-columns:minmax(0, 1.14fr) minmax(0, 1fr); }
 .logo-process, .logo-renders { display:grid; gap:clamp(.8rem, 2vw, 1.6rem); }
-.logo-process { grid-template-columns:minmax(0, 1fr) minmax(0, 1.65fr); }
+.logo-process { grid-template-columns:minmax(0, 1fr) minmax(0, 1.2fr); }
 .logo-process img, .logo-renders img { object-fit:contain; background:#efebe3; }
-.logo-process img { aspect-ratio:4 / 3; }
+.logo-process img { aspect-ratio:1 / 1; }
 .logo-renders { margin-top:1.6rem; grid-template-columns:repeat(3,minmax(0,1fr)); }
 .logo-renders img { aspect-ratio:3 / 2; }
 figure { margin:0; }
@@ -49,6 +50,7 @@ summary { cursor:pointer; padding:1.1rem 0; font-weight:600; }
 .exercise img { width:auto; max-width:100%; max-height:720px; margin:0 0 1.2rem; }
 .note { color:var(--muted); }
 footer { border-top:1px solid var(--line); font-size:.85rem; color:var(--muted); }
+@media (max-width:760px) { .chan-project { grid-template-columns:1fr; } }
 @media (max-width:600px) { .pair,.logo-process,.logo-renders { grid-template-columns:1fr; } .wrap { width:calc(100% - 2rem); } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 </style>
@@ -80,11 +82,13 @@ footer { border-top:1px solid var(--line); font-size:.85rem; color:var(--muted);
         </figure>
       </div>
     </article>
-    <article class="project" id="chan">
-      <p class="medium">Chinese calligraphy · Ink on coloured paper</p>
-      <h3>Chán <span lang="zh">禪</span></h3>
-      <p class="description">This single-character composition centres on <i>chán</i>, the Chinese term for Zen. A long vertical stroke anchors the character, while dry-brush edges reveal the warm paper beneath. Two red seals punctuate the composition.</p>
-      <p class="description">After brushing the main character, I added the smaller inscription in the open space to the side, keeping the large character as the focus.</p>
+    <article class="project chan-project" id="chan">
+      <div>
+        <p class="medium">Chinese calligraphy · Ink on coloured paper</p>
+        <h3>Chán <span lang="zh">禪</span></h3>
+        <p class="description">This single-character composition centres on <i>chán</i>, the Chinese term for Zen. A long vertical stroke anchors the character, while dry-brush edges reveal the warm paper beneath. Two red seals punctuate the composition.</p>
+        <p class="description">After brushing the main character, I added the smaller inscription in the open space to the side, keeping the large character as the focus.</p>
+      </div>
       <div class="pair chan-pair">
         <figure>
           <a href="chan-writing-process.jpg" aria-label="View Writing the inscription at full size"><img src="chan-writing-process.jpg" width="1125" height="2000" alt="A brush adds the smaller inscription beside the large character on golden paper." loading="lazy" decoding="async"></a>

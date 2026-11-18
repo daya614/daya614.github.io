@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Selected calligraphy and graphic design coursework by Huang Jingyuan.">
+<meta name="description" content="Selected calligraphy, visual identity and graphic design coursework by Huang Jingyuan.">
 <title>Huang Jingyuan | Graphic Design Portfolio</title>
 <style>
 :root { color-scheme: light; --paper:#f8f6f0; --ink:#20201d; --muted:#605c54; --line:#d4cfc4; --red:#902f27; }
@@ -30,7 +30,13 @@ section { scroll-margin-top:1rem; margin-bottom:clamp(4rem, 9vw, 8rem); }
 .medium { color:var(--red); font-size:.78rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; margin:0 0 .7rem; }
 .description { max-width:57ch; color:var(--muted); margin:1rem 0 1.6rem; }
 .pair { display:grid; grid-template-columns:1.057fr 1fr; gap:clamp(.8rem, 2vw, 1.6rem); }
-.single { display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.5rem, 7vw, 7rem); align-items:center; }
+.chan-pair { grid-template-columns:1.14fr 1fr; max-width:790px; }
+.logo-process, .logo-renders { display:grid; gap:clamp(.8rem, 2vw, 1.6rem); }
+.logo-process { grid-template-columns:minmax(0, 1fr) minmax(0, 1.65fr); }
+.logo-process img, .logo-renders img { object-fit:contain; background:#efebe3; }
+.logo-process img { aspect-ratio:4 / 3; }
+.logo-renders { margin-top:1.6rem; grid-template-columns:repeat(3,minmax(0,1fr)); }
+.logo-renders img { aspect-ratio:3 / 2; }
 figure { margin:0; }
 img { display:block; width:100%; height:auto; }
 figure a { display:block; }
@@ -43,7 +49,7 @@ summary { cursor:pointer; padding:1.1rem 0; font-weight:600; }
 .exercise img { width:auto; max-width:100%; max-height:720px; margin:0 0 1.2rem; }
 .note { color:var(--muted); }
 footer { border-top:1px solid var(--line); font-size:.85rem; color:var(--muted); }
-@media (max-width:600px) { .pair,.single { grid-template-columns:1fr; } .wrap { width:calc(100% - 2rem); } }
+@media (max-width:600px) { .pair,.logo-process,.logo-renders { grid-template-columns:1fr; } .wrap { width:calc(100% - 2rem); } }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 </style>
 </head>
@@ -74,16 +80,50 @@ footer { border-top:1px solid var(--line); font-size:.85rem; color:var(--muted);
         </figure>
       </div>
     </article>
-    <article class="project single">
-      <div>
-        <p class="medium">Chinese calligraphy · Ink on coloured paper</p>
-        <h3>Chán <span lang="zh">禪</span></h3>
-        <p class="description">This single-character composition centres on <i>chán</i>, the Chinese term for Zen. A long vertical stroke anchors the character, while dry-brush edges reveal the warm paper beneath. Two red seals punctuate the composition.</p>
+    <article class="project" id="chan">
+      <p class="medium">Chinese calligraphy · Ink on coloured paper</p>
+      <h3>Chán <span lang="zh">禪</span></h3>
+      <p class="description">This single-character composition centres on <i>chán</i>, the Chinese term for Zen. A long vertical stroke anchors the character, while dry-brush edges reveal the warm paper beneath. Two red seals punctuate the composition.</p>
+      <p class="description">After brushing the main character, I added the smaller inscription in the open space to the side, keeping the large character as the focus.</p>
+      <div class="pair chan-pair">
+        <figure>
+          <a href="chan-writing-process.jpg" aria-label="View Writing the inscription at full size"><img src="chan-writing-process.jpg" width="1125" height="2000" alt="A brush adds the smaller inscription beside the large character on golden paper." loading="lazy" decoding="async"></a>
+          <figcaption>Writing the inscription</figcaption>
+        </figure>
+        <figure>
+          <a href="chan-calligraphy.jpg" aria-label="View Finished calligraphy at full size"><img src="chan-calligraphy.jpg" width="983" height="2000" alt="The character Chán written in black ink on golden paper with two red seals." loading="lazy" decoding="async"></a>
+          <figcaption>Finished calligraphy</figcaption>
+        </figure>
       </div>
-      <figure>
-        <a href="chan-calligraphy.jpg" aria-label="View Chán at full size"><img src="chan-calligraphy.jpg" width="983" height="2000" alt="The character Chán written in black ink on golden paper with two red seals." loading="lazy" decoding="async"></a>
-        <figcaption>Chán · Brush and ink on golden paper</figcaption>
-      </figure>
+    </article>
+    <article class="project" id="daya-visual-identity">
+      <p class="medium">Visual identity · Rhino 3D modelling</p>
+      <h3>Daya Visual Identity</h3>
+      <p class="description">I began with a hand-drawn study of a letter D crossed by a tilted orbit. I simplified the curves and star points, then built a three-dimensional version in Rhino. The gold renders show how the depth and intersections change as the mark turns.</p>
+      <div class="logo-process">
+        <figure>
+          <a href="daya-logo-sketch.jpg" aria-label="View Early hand-drawn logo sketch at full size"><img src="daya-logo-sketch.jpg" width="702" height="863" alt="Early pencil sketch of the Daya monogram with a tilted orbit, star points and handwritten notes." loading="lazy" decoding="async"></a>
+          <figcaption>Early hand-drawn logo sketch</figcaption>
+        </figure>
+        <figure>
+          <a href="daya-logo-rhino.jpg" aria-label="View Rhino workspace at full size"><img src="daya-logo-rhino.jpg" width="2500" height="1618" alt="Rhino workspace showing the outline, front and side elevations, and a gold perspective render." loading="lazy" decoding="async"></a>
+          <figcaption>Rhino workspace</figcaption>
+        </figure>
+      </div>
+      <div class="logo-renders">
+        <figure>
+          <a href="daya-logo-oblique.jpg" aria-label="View Oblique perspective at full size"><img src="daya-logo-oblique.jpg" width="1800" height="1199" alt="Gold Daya monogram seen at an oblique angle." loading="lazy" decoding="async"></a>
+          <figcaption>Oblique perspective</figcaption>
+        </figure>
+        <figure>
+          <a href="daya-logo-rotated.jpg" aria-label="View Rotated perspective at full size"><img src="daya-logo-rotated.jpg" width="1760" height="1232" alt="Rotated view of the monogram showing the depth of its gold surfaces." loading="lazy" decoding="async"></a>
+          <figcaption>Rotated perspective</figcaption>
+        </figure>
+        <figure>
+          <a href="daya-logo-detail.jpg" aria-label="View Detail of the intersecting forms at full size"><img src="daya-logo-detail.jpg" width="1800" height="1154" alt="Close-up of the gold orbit and letterform crossing." loading="lazy" decoding="async"></a>
+          <figcaption>Detail of the intersecting forms</figcaption>
+        </figure>
+      </div>
     </article>
   </section>
   <section id="coursework" aria-labelledby="coursework-title">
